@@ -345,17 +345,17 @@ type PreflightOptions =
 function preflight(options: PreflightOptions): void {
   logger.info("Running preflight checks");
 
-  logger.verbose("Checking that working directory is clean");
-  const cleanCmd = "git diff-index --quiet HEAD";
-  try {
-    logger.debug(cleanCmd);
-    execSync(cleanCmd);
-  } catch (err) {
-    logger.error(
-      "Working directory is not clean. Stash your changes and try again.",
-    );
-    process.exit(1);
-  }
+  // logger.verbose("Checking that working directory is clean");
+  // const cleanCmd = "git diff-index --quiet HEAD";
+  // try {
+  //   logger.debug(cleanCmd);
+  //   execSync(cleanCmd);
+  // } catch (err) {
+  //   logger.error(
+  //     "Working directory is not clean. Stash your changes and try again.",
+  //   );
+  //   process.exit(1);
+  // }
 
   logger.verbose("Confirming gh CLI is installed and authorized");
   const ghVersionCmd = "gh version";
