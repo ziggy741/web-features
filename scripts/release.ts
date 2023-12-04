@@ -248,8 +248,19 @@ function publish(args) {
   build();
   const { version } = readPackageJSON(packages["web-features"]);
   const tag = `web-features/${version}`;
-  run(`git tag --annotate "${tag}" --message="web-features ${version}"`);
-  run(`git push origin ${tag}`);
+
+  const tagCommands = [
+    `git tag --annotate "${tag}" --message="web-features ${version}"`,
+    `git push origin ${tag}`,
+  ];
+
+  for (const cmd of tagCommands) {
+    if (args.dryRun) {
+      logger.info(`Dry run, not running: ${tagCommands}`);
+      continue;
+    }
+    run(cmd);
+  }
 
   logger.info("Publishing release");
   let publishCmd = `npm publish`;
