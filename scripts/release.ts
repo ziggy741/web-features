@@ -264,6 +264,9 @@ function publish(args) {
 
   logger.info("Publishing release");
   let publishCmd = `npm publish`;
+  if (version.includes("alpha")) {
+    publishCmd = `${publishCmd} --tag next`;
+  }
   if (args.dryRun) {
     publishCmd = `${publishCmd} --dry-run`;
   }
