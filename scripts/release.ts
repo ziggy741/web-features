@@ -256,7 +256,7 @@ function publish(args) {
 
   for (const cmd of tagCommands) {
     if (args.dryRun) {
-      logger.info(`Dry run, not running: ${tagCommands}`);
+      logger.info(`Dry run, not running: ${cmd}`);
       continue;
     }
     run(cmd);
@@ -269,7 +269,9 @@ function publish(args) {
   }
   if (args.dryRun) {
     publishCmd = `${publishCmd} --dry-run`;
+    logger.info(`Dry run: ${publishCmd}`);
   }
+
   execSync(publishCmd, { cwd: packages["web-features"], stdio: "inherit" });
 }
 
