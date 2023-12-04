@@ -13,8 +13,8 @@ compat_features:
   - api.HTMLInputElement.popoverTargetElement
   - api.ToggleEvent
   - api.ToggleEvent.ToggleEvent
-  - api.ToggleEvent.newstate
-  - api.ToggleEvent.oldstate
+  - api.ToggleEvent.newState
+  - api.ToggleEvent.oldState
   - css.selectors.backdrop.popover
   - css.selectors.popover-open
   - html.global_attributes.popover
