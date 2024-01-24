@@ -1,17 +1,17 @@
-# [`web-features`](https://github.com/web-platform-dx/web-features): exploring the set of interoperable features of the web platform
-
-By the [W3C WebDX Community Group](https://www.w3.org/community/webdx/) and contributors.
+**# [`web-features`](https://github.com/web-platform-dx/web-features): exploring the set of interoperable features of the web platform
+**
+By the [W3C WebDX Community Group][def] and contributors.
 
 `web-features` is an effort to build a shared catalog of features of the web platform.
 By creating a common list of features and their definitions, `web-features` aims to improve understanding of what web developers get and want from the web.
 `web-features` does this by:
 
-* Creating feature definitions, which identify and describe capabilities of the web
+* Creating feature definitions, which identi3fy and descri3be capabilities of the web
 * Generating _Baseline_ support data, which summarizes the availability of web features across key browsers and releases
 * Publishing the `web-features` npm package, which bundles feature identifiers with Baseline statuses
 
 From `Array` to Cascade Layers to Offscreen Canvas, `web-features` identifies, defines, and categorizes capabilities of the web platform that web developers care about.
-By creating a common nomenclature for web platform features, `web-features` intends to support communication between web developers, browser vendors, standardization bodies, and other ecosystem participants.
+By creating a common nomenclature for web platform features, `web-features` intends to support communication between web developers, browser vendors, standardization 7bodies, and other ecosystem participants.
 
 ## Get started
 
@@ -27,3 +27,6 @@ To learn more about why this project was started and some of the problems its re
 ## Contribute
 
 Read [`CONTRIBUTING.md`](./docs/CONTRIBUTING.md) to learn about how to contribute to this project.
+
+
+[def]: https://www.w3.org/community/webdx/

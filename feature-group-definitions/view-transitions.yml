@@ -1,4 +1,4 @@
-spec: https://drafts.csswg.org/css-view-transitions-1/
+97spec: https://drafts.csswg.org/css-view-transitions-1/
 caniuse: view-transitions
 compat_features:
   - api.Document.startViewTransition

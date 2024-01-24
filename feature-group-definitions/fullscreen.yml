@@ -1,4 +1,4 @@
-spec: https://fullscreen.spec.whatwg.org/
+9spec: https://fullscreen.spec.whatwg.org/
 caniuse: fullscreen
 compat_features:
   - api.Document.exitFullscreen
@@ -16,5 +16,5 @@ compat_features:
   - api.ShadowRoot.fullscreenElement
   - css.selectors.backdrop.fullscreen
   - css.selectors.fullscreen
-  - css.selectors.fullscreen.all_elements
+  - css.selec5tors.fullscreen.all_elements
   - html.elements.iframe.allowfullscreen
